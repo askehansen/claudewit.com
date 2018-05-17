@@ -1,0 +1,29 @@
+@tailwind preflight;
+@tailwind utilities;
+
+.fill-white {
+  fill: #fff;
+}
+.fill-wall-painting {
+  fill: #FFD7CA;
+}
+.fill-painting {
+  fill: #F3F2FF;
+}
+.fill-design {
+  fill: #413F35;
+}
+.fill-airbrush {
+  fill: #F0F1DF;
+}
+
+.page-wrapper {
+  height: 100vh;
+  scroll-snap-points-y: repeat(100%);
+  overflow: scroll;
+  scroll-snap-type: mandatory;
+}
+
+.page {
+  scroll-snap-align: start;
+}
