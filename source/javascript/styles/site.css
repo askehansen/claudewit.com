@@ -1,4 +1,31 @@
 @tailwind preflight;
+
+.page-container {
+  height: 100vh;
+  overflow: scroll;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+.page {
+  @apply h-screen relative;
+  scroll-snap-align: start;
+}
+
+.page-body {
+  @apply absolute;
+  width: 500px;
+}
+
+.page-title {
+  @apply font-normal font-stardom;
+}
+
+.page-text {
+  @apply font-claire text-white text-lg tracking-normal leading-normal;
+}
+
 @tailwind utilities;
 
 .fill-white {
@@ -15,15 +42,4 @@
 }
 .fill-airbrush {
   fill: #F0F1DF;
-}
-
-.page-wrapper {
-  height: 100vh;
-  scroll-snap-points-y: repeat(100%);
-  overflow: scroll;
-  scroll-snap-type: mandatory;
-}
-
-.page {
-  scroll-snap-align: start;
 }
