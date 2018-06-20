@@ -1,45 +1,49 @@
-.fixed.z-10.pin-b.mb-16.w-full.text-center = logo("fill-white w-70px")
+.fixed.z-10.pin-b.mb-16.w-full.md--text-center.mx-4 = logo("fill-white w-70px")
 
 .page-container
-  .page.bg-black.flex.items-center.justify-center.flex-col
-    h2.page-title.text-white.text-5xl Claude Wit
-    .flex.mt-8
-      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="#wall-painting" Vægmalerier
-      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="#painting" Malerier
-      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="#design" Design
-      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="#airbrush" Airbrush
+  .page.bg-black.flex.md--items-center.justify-center.flex-col
+    h2.mx-4.page-title.text-white.text-5xl Claude Wit
+    .flex.mt-8.flex-col.md--flex-row
+      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="#wall-painting" Vægmalerier
+      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="#painting" Malerier
+      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="#airbrush" Airbrush
+      a.mx-4.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="#design" Design
 
 
 
   #wall-painting.page.z-30.bg-cover.bg-center style="background-image: url('#{asset_url('images/wall-painting.jpg')}')"
-    .page-body.pin-t.pin-r.mt-12.mr-12
+    .page-body.pin-t.pin-r.md--mt-12.md--mr-12.m-6
       .flex.items-center
         .w-16 = logo("fill-wall-painting w-36px")
-        h2.page-title.text-wall-painting.text-5xl Vægmalerier
-      .ml-16.page-text Vægmalerier kan laves på flere forskellige måder, f. eks. via pensel maling eller air brush. Jeg udnytter meget væggens placering og lokation til at forstærke dybden i maleriet, hvilket gør at man får en 3D lignende effekt. Jeg gør meget brug af form, dybde og perspektivet. Eksempel kan være at jeg bruger UV-maling til at forstærke effekten. Jeg forsøger at gøre brug af moderne metoder, så alle malerier bliver bedst muligt.
+        h2.page-title.text-3xl.text-wall-painting.md--text-5xl Vægmalerier
+      .ml-16.page-text Et vægmaleri er ikke bare et maleri - det skaber et rum i et rum. Min tilgang er simpel: jeg tager udgangspunkt i det rum, motivet skal ånde i. Og så går jeg på opdagelse: i teknikker, i farver, i forestillinger og i malekunsten. Eksempelvis, tilføjer jeg en UV-effekt, som forstærker effekten i det enkelte motiv. Hvis dit rum higer efter et løft, så kontakt mig for et uforpligtende tilbud.
 
   #painting.page.z-30.bg-cover.bg-center style="background-image: url('#{asset_url('images/painting.jpg')}')"
-    .page-body.pin-b.pin-l.mb-32.ml-48
+    .page-body.pin-b.pin-l.md--mb-32.md--ml-48.m-6
       .flex.items-center
         .w-16 = logo("fill-painting w-36px")
-        h2.page-title.text-painting.text-6xl Malerier
-      .ml-16.page-text Hvis du ønsker at bestille et maleri ud fra en idé, kan du kontakte mig til en konsultation. Her snakker vi om dine idéer, krav mm., derefter laver jeg en fortolkning, som du skal godkende. Hvis det godkendes af begge parter vil vi aftale nærmere i forhold til deadline og levering. En konsultation varer 1 time og koster DKK 1500.
-
-  #design.page.z-30.bg-cover.bg-center style="background-image: url('#{asset_url('images/design.jpg')}')"
-    .page-body.pin-b.pin-l.mb-32.ml-32
-      .flex.items-center
-        .w-16 = logo("fill-design w-36px")
-        h2.page-title.text-design.text-6xl Design
-      .ml-16.page-text.text-black.font-claire-bold Jeg kan assistere med at lave koncept-udvikling, logo og t-shirt design.
+        h2.page-title.text-3xl.text-painting.md--text-6xl Malerier
+      .ml-16.page-text
+        div Opdag det, du ikke kan se bort fra. Rejsen til et maleri, du vil holde af, kan opdeles i tre trin:
+        div - Du fortæller din idé, vision eller ønsker
+        div - Jeg klargør lærredet og skaber en fortolkning, du skal godkende
+        div - Hvis begge parter godkender retningen, aftaler vi deadline og levering
 
   #airbrush.page.z-30.bg-cover.bg-center style="background-image: url('#{asset_url('images/airbrush.jpg')}')"
-    .page-body.pin-b.pin-r.mb-32.mr-32
+    .page-body.pin-b.pin-r.md--mb-32.md--mr-32.m-6
       .flex.items-center
         .w-16 = logo("fill-airbrush w-36px")
-        h2.page-title.text-airbrush.text-6xl Airbrush
-      .ml-16.page-text I denne kategori kan du finde eksempler på custom designs. Dette er er specielt kundeønske og kan være alt fra lakering af biler til en super yacht.
+        h2.page-title.text-3xl.text-airbrush.md--text-6xl Airbrush
+      .ml-16.page-text Mange af de facader, der omgiver os, trænger ofte til et ansigtsløft. Det er her, jeg træder ind i billedet. Jeg airbrusher alt fra vægge, store facader, biler og luksusyachts. Udgangspunktet er simpelt: at tilføje en facade visuelt power og dybe flader … og at  få beskueren til at stoppe op.
+
+  #design.page.z-30.bg-cover.bg-center style="background-image: url('#{asset_url('images/design.jpg')}')"
+    .page-body.pin-b.pin-l.md--mb-32.md--ml-32.m-6
+      .flex.items-center
+        .w-16 = logo("fill-design w-36px")
+        h2.page-title.text-3xl.text-design.md--text-6xl Design
+      .ml-16.page-text.text-black.font-claire-bold Design er mødet mellem idé, process og teknik. Mine designs er løsning til problemstillinger, såsom: Hvordan skaber vi et koncept, hvilket logo fungerer bedst, etc. Mine designs lever på tværs af medier: om det er print, analogt eller på T-shirts. Jeg har hjulpet flere kunder. Skriv og kortlæg din udfordring - en e-mail koster intet.
 
 
-  .page.bg-black.flex.items-center.justify-center
-    a.mx-8.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="mailto:cw@claudewit.com" cw@claudewit.com
-    a.mx-8.p-4.no-underline.text-white.text-lg.font-stardom class="hover:underline" href="#" Instagram
+  .page.bg-black.flex.md--items-center.justify-center.flex-col.md--flex-row
+    a.mx-8.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="mailto:cw@claudewit.com" cw@claudewit.com
+    a.mx-8.p-4.no-underline.text-white.text-lg.font-stardom class="hover--underline" href="#" Instagram
