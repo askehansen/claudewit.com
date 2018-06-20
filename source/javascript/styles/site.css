@@ -6,6 +6,7 @@
   scroll-snap-points-y: repeat(100%);
   scroll-snap-type: mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .page {
@@ -15,7 +16,7 @@
 
 .page-body {
   @apply absolute;
-  width: 500px;
+  max-width: 500px;
 }
 
 .page-title {
