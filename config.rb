@@ -20,6 +20,8 @@ set :images_dir, 'images'
 
 activate :asset_hash
 
+activate :directory_indexes
+
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
